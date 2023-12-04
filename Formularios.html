@@ -1,0 +1,92 @@
+l<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form en HTML</title>
+  </head>
+  <body>
+    <h1>Formularios en HTML</h1>
+    <form method="get" action="#">
+      <label for="nombre"> Tu nombre</label>
+      <input type="text" name="nombre" id="nombre" />
+      <input
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="Correo electrónico"
+      />
+      <input
+        type="password"
+        name="contraseña"
+        id="contraseña"
+        placeholder="Contraseña"
+      />
+      <input
+        type="number"
+        name="telefono"
+        id="telefono"
+        placeholder="Teléfono"
+      />
+      <input type="submit" value="Enviar Formulario" />
+      <input type="reset" value="Resetear Formulario" />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <form>
+      <p>Elige tu genero:</p>
+      <input type="radio" name="genero" id="masculino" />
+      <label for="masculino"> Masculino</label>
+      <input type="radio" name="genero" id="femenino" />
+      <label for="femenino"> Femenino </label>
+      <input type="radio" name="genero" id="otro" />
+      <label for="otro"> Otro </label>
+
+      <br />
+
+      <p>Elege tu vehículo:</p>
+      <input type="checkbox" name="vehiculo1" id="coche" checked />
+      <label for="coche"> Coche</label><br />
+      <input type="checkbox" name="vehiculo2" id="moto" />
+      <label for="moto"> Moto</label><br />
+      <input type="checkbox" name="vehiculo3" id="bici" />
+      <label for="bici"> Bici</label><br />
+
+      <input type="file" name="archivo" id="archivo" />
+      <label for="cumpleaños"> Tu cumpleaños</label>
+      <input type="date" name="cumpleaños" id="cumpleaños" />
+      <p>Elige tu país</p>
+      <select name="país">
+        <optgroup label="Europa">
+          <option value="es">España</option>
+          <option value="it">Italia</option>
+          <option value="fr">Francia</option>
+        </optgroup>
+        <optgroup label="America">
+          <option value="AR">Argentina</option>
+          <option value="ve">Venezuela</option>
+        </optgroup>
+      </select>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <input
+          type="test"
+          name="nombre"
+          id="nombre-fieldset"
+          placeholder="Nombre"
+        />
+        <input
+          type="email"
+          name="correo"
+          id="correo-fieldset"
+          placeholder="Correo electrónico"
+        />
+        <textarea rows="5" cols="30" placeholder="Describe yourself here...">
+        </textarea>
+        <button type="submit">Enviar formulario</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
